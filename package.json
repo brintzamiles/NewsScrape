@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "materialize": "^1.0.0",
+    "mongoose": "^5.4.2",
+    "promise": "^8.0.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,11 +28,5 @@
   "bugs": {
     "url": "https://github.com/brintzamiles/NewsScrape/issues"
   },
-  "homepage": "https://github.com/brintzamiles/NewsScrape#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "express-handlebars": "^3.0.0",
-    "mongoose": "^5.4.2"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/brintzamiles/NewsScrape#readme"
 }
