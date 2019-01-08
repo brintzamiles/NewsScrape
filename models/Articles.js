@@ -1,0 +1,44 @@
+let mongoose = require('mongoose');
+
+// Initialize and save to the schema constructor
+let Schema = mongoose.Schema; 
+
+
+// Model
+let ArticleSchema = new Schema({ 
+
+  headline: {
+    type: String,
+    required: true
+  },
+
+  summary: {
+    type: String,
+    required: true
+  },
+
+  url: {
+    type: String,
+    required: true
+  },
+
+  imageURL: {
+    type: String,
+    required: true
+  },
+
+  slug: {
+    type: String
+  },
+
+  note: [{
+    type: Schema.Types.ObjectId,
+    ref: "Note"
+  }]
+
+}); 
+
+
+let Article = mongoose.model("Article", ArticleSchema);
+
+module.exports = Article; 
