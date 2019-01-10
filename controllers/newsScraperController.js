@@ -15,7 +15,7 @@ let mongooseConnection = mongoose.connection;
 
 mongooseConnection.on('error', console.error.bind(console, 'connection error:'));
 mongooseConnection.once('open', function() {
-  console.log(`Sucessfully Connected to Mongo DB !`); 
+  console.log(`Successfully Connected to Mongo DB !`); 
 });
 
 module.exports = (app) => { 
